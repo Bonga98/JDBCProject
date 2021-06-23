@@ -1,0 +1,16 @@
+create database AdelaneFashionsDB;
+use AdelaneFashionsDB;
+
+CREATE TABLE tblAdelaneFashions(
+StoreNumber VARCHAR(3) UNIQUE,
+City VARCHAR(32) NOT NULL,
+Province VARCHAR(2) NOT NULL,  
+Ownership VARCHAR(1) NOT NULL,
+Sales double NOT NULL); 
+
+INSERT INTO tblAdelaneFashions VALUES ('100','VanderbijlPark','GP','C',236700);
+INSERT INTO tblAdelaneFashions VALUES ('101','Durban','KZN','C',125900);
+INSERT INTO tblAdelaneFashions VALUES ('102','Nigel','GP','F',96575);
+INSERT INTO tblAdelaneFashions VALUES ('103','Grahamstown','EC','C',135400);
+INSERT INTO tblAdelaneFashions VALUES ('104','Boksburg','GP','F',108000);
+INSERT INTO tblAdelaneFashions VALUES ('105','Klerksdorp','NW','C',2126000);
